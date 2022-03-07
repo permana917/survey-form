@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form, thank you.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age <span>(optional)</span>
+        <input type="number" id="number" placeholder="Age" min="15" max="40" />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        Which option best describes your current role?
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="job">Full time job</option>
+        </select>
+      </label>
+      <label for="gender" id="gender-label"> Your gender?</label>
+      <input type="radio" name="gender" value="male" /> Male <br />
+      <input type="radio" name="gender" value="female" /> Female <br /><br />
+      <label for="hoby" id="hoby-label"> Your Hoby?</label>
+      <input type="checkbox" name="hoby" value="football" /> Football <br />
+      <input type="checkbox" name="hoby" value="basketball" /> Basketball <br />
+      <input type="checkbox" name="hoby" value="badminton" /> Badminton <br />
+      <input type="checkbox" name="hoby" value="fishing" /> Fishing <br /><br />
+      <label for="test" id="test-label"> Any comment or suggestion?</label>
+
+      <textarea id="test" cols="30" rows="10"></textarea>
+      <button id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
